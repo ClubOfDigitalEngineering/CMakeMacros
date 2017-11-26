@@ -32,3 +32,9 @@ endmacro(activateAllTestOption)
 macro(deactivateAllTestOption)
 	set(isAllTestSuite OFF)
 endmacro(deactivateAllTestOption)
+
+
+
+macro(setTargetNameToFolderName path)
+     get_filename_component(targetName "${path}" NAME)
+endmacro(setTargetNameToFolderName)
